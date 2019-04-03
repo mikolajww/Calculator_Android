@@ -41,6 +41,9 @@ public class AdvancedCalculatorActivity extends AppCompatActivity {
         for (int id : Calculator.basicButtonIds) {
             initButtonHandler(id, false);
         }
+        for(int id : Calculator.constantButtonIds) {
+            initButtonHandler(id, false);
+        }
         initSpecialButtons();
     }
 

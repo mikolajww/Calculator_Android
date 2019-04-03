@@ -13,6 +13,7 @@ public class Calculator {
             R.id.button_subtract, R.id.button_dot, R.id.button_open_paren, R.id.button_close_paren);
     public static List<Integer> advancedButtonIds = Arrays.asList(R.id.button_sin, R.id.button_cos,
             R.id.button_tan, R.id.button_sqrt, R.id.button_log, R.id.button_ln);
+    public static List<Integer> constantButtonIds = Arrays.asList(R.id.button_pi, R.id.button_e);
 
     private Calculator() {
         throw new RuntimeException("This class is not meant to be instantiated!");
