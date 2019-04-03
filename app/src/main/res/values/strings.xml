@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="basic_button">Basic mode</string>
+    <string name="advanced_button">Advanced Mode</string>
+    <string name="about_button">About</string>
+    <string name="exit_button">Exit</string>
+    <string name="day_night_mode">Day / Night Mode</string>
+</resources>

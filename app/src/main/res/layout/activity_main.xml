@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_button"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:background="?attr/buttonColor"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textColor="?attr/textColor" />
+
+        <Button
+            android:id="@+id/advanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/advanced_button"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:background="?attr/buttonColor"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textColor="?attr/textColor" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_button"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:background="?attr/buttonColor"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textColor="?attr/textColor" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_button"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:background="?attr/buttonColor"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textColor="?attr/textColor" />
+
+        <Switch
+            android:id="@+id/modeSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/day_night_mode"
+            android:textColor="?attr/textColor"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/app_name"
+        android:textColor="?attr/textColor"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
