@@ -16,7 +16,7 @@
         android:layout_marginEnd="8dp"
         android:textAlignment="viewEnd"
         android:textAllCaps="true"
-        android:textColor="?attr/textColor"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -211,7 +211,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="1"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -223,7 +224,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="2"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -235,7 +237,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="3"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -264,7 +267,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="4"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -276,7 +280,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="5"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -288,7 +293,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="6"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -317,7 +323,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="7"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -329,7 +336,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="8"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -341,7 +349,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="9"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -370,7 +379,8 @@
                 android:layout_marginBottom="4dp"
                 android:background="?attr/buttonColor"
                 android:text="0"
-                android:textColor="?attr/textColor"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
