@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/calculator_output"
-        android:layout_width="309dp"
-        android:layout_height="86dp"
+        android:layout_width="379dp"
+        android:layout_height="69dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:maxLines="2"
         android:minLines="1"
@@ -21,14 +21,14 @@
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="324dp"
-        android:layout_height="262dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -48,7 +48,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="("
                 android:textColor="?attr/textColor"
@@ -62,7 +61,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text=")"
                 android:textColor="?attr/textColor"
@@ -74,14 +72,13 @@
                 android:id="@+id/button_delete"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="Delete"
-                android:textColor="?attr/textColor"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="?attr/textColor" />
 
             <Button
                 android:id="@+id/button_clear"
@@ -89,7 +86,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="Clear"
                 android:textColor="?attr/textColor"
@@ -106,53 +102,49 @@
                 android:id="@+id/button_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="1"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="2"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="3"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_divide"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="/"
-                android:textColor="?attr/textColor"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="?attr/textColor" />
         </TableRow>
 
         <TableRow
@@ -163,53 +155,49 @@
                 android:id="@+id/button_4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="4"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="5"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="6"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_subtract"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="-"
-                android:textColor="?attr/textColor"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="?attr/textColor" />
         </TableRow>
 
         <TableRow
@@ -220,53 +208,49 @@
                 android:id="@+id/button_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="7"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="8"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="9"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_add"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="+"
-                android:textColor="?attr/textColor"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="?attr/textColor" />
         </TableRow>
 
         <TableRow
@@ -277,27 +261,25 @@
                 android:id="@+id/button_0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="0"
-                android:textColor="@color/colorAccent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="@color/colorAccent" />
 
             <Button
                 android:id="@+id/button_dot"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="."
-                android:textColor="?attr/textColor"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="223dp" />
+                tools:layout_editor_absoluteY="223dp"
+                android:textColor="?attr/textColor" />
 
             <Button
                 android:id="@+id/button_equals"
@@ -305,7 +287,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="="
                 android:textColor="?attr/textColor"
@@ -318,7 +299,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="1"
                 android:background="?attr/buttonColor"
                 android:text="*"
                 android:textColor="?attr/textColor"

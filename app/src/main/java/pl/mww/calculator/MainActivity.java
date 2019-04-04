@@ -4,15 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Switch;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Objects;
 
-    private Switch modeSwitch;
-    private Button exitButton;
-    private Button basicButton;
-    private Button advancedButton;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +21,15 @@ public class MainActivity extends AppCompatActivity {
         else {
             setTheme(R.style.AppTheme);
         }
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initButtons();
 
-        modeSwitch = findViewById(R.id.modeSwitch);
+        Switch modeSwitch = findViewById(R.id.modeSwitch);
         if(AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
             modeSwitch.setChecked(true);
         }
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initButtons() {
-        exitButton = findViewById(R.id.exit);
+        Button exitButton = findViewById(R.id.exit);
         exitButton.setOnClickListener(click -> {
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_HOME);
@@ -52,15 +54,21 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        basicButton = findViewById(R.id.basic);
+        Button basicButton = findViewById(R.id.basic);
         basicButton.setOnClickListener(click -> {
             Intent intent = new Intent(this, BasicCalculatorActivity.class);
             startActivity(intent);
         });
 
-        advancedButton = findViewById(R.id.advanced);
+        Button advancedButton = findViewById(R.id.advanced);
         advancedButton.setOnClickListener(click -> {
             Intent intent = new Intent(this, AdvancedCalculatorActivity.class);
+            startActivity(intent);
+        });
+
+        Button aboutButton = findViewById(R.id.about);
+        aboutButton.setOnClickListener(click -> {
+            Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
         });
     }
