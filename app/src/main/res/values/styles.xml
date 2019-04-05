@@ -21,6 +21,7 @@
         <item name="backgroundColor">#303030</item>
         <item name="textColor">#ffffff</item>
         <item name="buttonColor">#3C3F42</item>
+        <item name="android:navigationBarColor">#303030</item>
         <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
     </style>
 
