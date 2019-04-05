@@ -178,7 +178,7 @@
                 android:layout_marginBottom="4dp"
                 android:layout_weight="1"
                 android:background="?attr/buttonColor"
-                android:text="log"
+                android:text="log10"
                 android:textColor="?attr/textColor"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
