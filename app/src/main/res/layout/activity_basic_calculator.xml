@@ -10,16 +10,16 @@
     <TextView
         android:id="@+id/calculator_output"
         android:layout_width="309dp"
-        android:layout_height="86dp"
+        android:layout_height="129dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:maxLines="2"
         android:minLines="1"
         android:textAlignment="viewEnd"
         android:textAllCaps="true"
         android:textColor="@color/colorAccent"
-        android:textSize="24sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,8 +27,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="324dp"
-        android:layout_height="262dp"
+        android:layout_width="340dp"
+        android:layout_height="474dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -40,7 +40,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button_open_paren"
@@ -52,6 +53,7 @@
                 android:background="?attr/buttonColor"
                 android:text="("
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 android:visibility="visible"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
@@ -66,6 +68,7 @@
                 android:background="?attr/buttonColor"
                 android:text=")"
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 android:visibility="visible"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
@@ -80,6 +83,7 @@
                 android:background="?attr/buttonColor"
                 android:text="Delete"
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -93,6 +97,7 @@
                 android:background="?attr/buttonColor"
                 android:text="Clear"
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -100,7 +105,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button_1"
@@ -112,6 +118,7 @@
                 android:background="?attr/buttonColor"
                 android:text="1"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -125,6 +132,7 @@
                 android:background="?attr/buttonColor"
                 android:text="2"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -138,6 +146,7 @@
                 android:background="?attr/buttonColor"
                 android:text="3"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -151,13 +160,15 @@
                 android:background="?attr/buttonColor"
                 android:text="/"
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button_4"
@@ -169,6 +180,7 @@
                 android:background="?attr/buttonColor"
                 android:text="4"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -182,6 +194,7 @@
                 android:background="?attr/buttonColor"
                 android:text="5"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -195,6 +208,7 @@
                 android:background="?attr/buttonColor"
                 android:text="6"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -208,13 +222,15 @@
                 android:background="?attr/buttonColor"
                 android:text="-"
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button_7"
@@ -226,6 +242,7 @@
                 android:background="?attr/buttonColor"
                 android:text="7"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -239,6 +256,7 @@
                 android:background="?attr/buttonColor"
                 android:text="8"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -252,6 +270,7 @@
                 android:background="?attr/buttonColor"
                 android:text="9"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -265,13 +284,15 @@
                 android:background="?attr/buttonColor"
                 android:text="+"
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button_0"
@@ -283,6 +304,7 @@
                 android:background="?attr/buttonColor"
                 android:text="0"
                 android:textColor="@color/colorAccent"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -296,6 +318,7 @@
                 android:background="?attr/buttonColor"
                 android:text="."
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -309,6 +332,7 @@
                 android:background="?attr/buttonColor"
                 android:text="="
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -322,6 +346,7 @@
                 android:background="?attr/buttonColor"
                 android:text="*"
                 android:textColor="?attr/textColor"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 

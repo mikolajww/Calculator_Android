@@ -5,36 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/backgroundColor"
-    tools:context=".BasicCalculatorActivity">
+    tools:context=".AdvancedCalculatorActivity">
 
     <TextView
         android:id="@+id/calculator_output"
-        android:layout_width="611dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="32dp"
         android:maxLines="2"
         android:minLines="1"
         android:textAlignment="viewEnd"
         android:textAllCaps="true"
         android:textColor="@color/colorAccent"
-        android:textSize="36sp"
+        android:textSize="70sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="608dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="842dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculator_output">
 
@@ -53,7 +52,7 @@
                 android:background="?attr/buttonColor"
                 android:text="("
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 android:visibility="visible"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
@@ -68,7 +67,7 @@
                 android:background="?attr/buttonColor"
                 android:text=")"
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 android:visibility="visible"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
@@ -83,7 +82,7 @@
                 android:background="?attr/buttonColor"
                 android:text="Delete"
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -97,7 +96,7 @@
                 android:background="?attr/buttonColor"
                 android:text="Clear"
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -118,7 +117,7 @@
                 android:background="?attr/buttonColor"
                 android:text="1"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -132,7 +131,7 @@
                 android:background="?attr/buttonColor"
                 android:text="2"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -146,7 +145,7 @@
                 android:background="?attr/buttonColor"
                 android:text="3"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -160,7 +159,7 @@
                 android:background="?attr/buttonColor"
                 android:text="/"
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
         </TableRow>
@@ -180,7 +179,7 @@
                 android:background="?attr/buttonColor"
                 android:text="4"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -194,7 +193,7 @@
                 android:background="?attr/buttonColor"
                 android:text="5"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -208,7 +207,7 @@
                 android:background="?attr/buttonColor"
                 android:text="6"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -222,7 +221,7 @@
                 android:background="?attr/buttonColor"
                 android:text="-"
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
         </TableRow>
@@ -242,7 +241,7 @@
                 android:background="?attr/buttonColor"
                 android:text="7"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -256,7 +255,7 @@
                 android:background="?attr/buttonColor"
                 android:text="8"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -270,7 +269,7 @@
                 android:background="?attr/buttonColor"
                 android:text="9"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -284,14 +283,14 @@
                 android:background="?attr/buttonColor"
                 android:text="+"
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="103dp"
             android:layout_weight="1">
 
             <Button
@@ -304,7 +303,7 @@
                 android:background="?attr/buttonColor"
                 android:text="0"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -318,7 +317,7 @@
                 android:background="?attr/buttonColor"
                 android:text="."
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -332,7 +331,7 @@
                 android:background="?attr/buttonColor"
                 android:text="="
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -346,7 +345,7 @@
                 android:background="?attr/buttonColor"
                 android:text="*"
                 android:textColor="?attr/textColor"
-                android:textSize="24sp"
+                android:textSize="36sp"
                 tools:layout_editor_absoluteX="24dp"
                 tools:layout_editor_absoluteY="223dp" />
 
@@ -354,4 +353,191 @@
 
     </TableLayout>
 
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/calculator_output">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_pi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="pi"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+            <Button
+                android:id="@+id/button_e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="e"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_sqrt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="sqrt"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+            <Button
+                android:id="@+id/button_square"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="x^2"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_sin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="sin"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+            <Button
+                android:id="@+id/button_cos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="cos"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_tan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="tan"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+            <Button
+                android:id="@+id/button_ln"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="ln"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_exp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="x^y"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+
+            <Button
+                android:id="@+id/button_log"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="?attr/buttonColor"
+                android:text="log10"
+                android:textColor="?attr/textColor"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="223dp" />
+        </TableRow>
+
+    </TableLayout>
 </android.support.constraint.ConstraintLayout>

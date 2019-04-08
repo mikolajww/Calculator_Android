@@ -63,15 +63,20 @@ public class BasicCalculatorActivity extends AppCompatActivity {
         Button buttonEquals = findViewById(R.id.button_equals);
         buttonEquals.setOnClickListener(click -> {
             String result = Calculator.evaluateExpression(tokenManager.constructString());
-            if(result.equalsIgnoreCase("NaN") || result.equalsIgnoreCase("Syntax Error")) {
+            if(result.equalsIgnoreCase("NaN")) {
                 Toast.makeText(getApplicationContext(), "Invalid operation", Toast.LENGTH_LONG).show();
+                return;
+            }
+            if(result.equalsIgnoreCase("Syntax Error")) {
+                Toast.makeText(getApplicationContext(), "Syntax Error", Toast.LENGTH_LONG).show();
                 return;
             }
             textView.setText(result);
             tokenManager.clearTokens();
-            for(char c: result.toCharArray()) {
+            /*for(char c: result.toCharArray()) {
                 tokenManager.append(Character.toString(c));
-            }
+            }*/
+            tokenManager.append(result);
         });
         Button buttonDelete = findViewById(R.id.button_delete);
         buttonDelete.setOnClickListener(click -> {
